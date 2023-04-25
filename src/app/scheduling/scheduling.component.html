@@ -11,6 +11,8 @@
 
     <h1>List of services</h1>
 
-    <app-services></app-services>
+    <div class="services" *ngFor="let s of service_list">
+      <app-services [service]="s"></app-services>
+    </div>
   </div>
 </div>
