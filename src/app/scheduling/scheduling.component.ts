@@ -7,10 +7,9 @@ import { ServiceDataService } from '../service-data.service';
   styleUrls: ['./scheduling.component.css'],
 })
 export class SchedulingComponent implements OnInit {
-
   constructor(private services: ServiceDataService) {}
 
-  service_list = this.services.Services
+  service_list = this.services.getServices();
 
   ngOnInit() {}
 }

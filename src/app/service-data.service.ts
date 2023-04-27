@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class ServiceDataService {
-  Services = [
+  services = [
     {
       id: 1,
       serviceType: 'Roof Wash',
@@ -35,4 +37,8 @@ export class ServiceDataService {
   ];
 
   constructor() {}
+
+  getServices() {
+    return this.services;
+  }
 }
