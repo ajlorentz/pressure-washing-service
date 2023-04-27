@@ -36,9 +36,25 @@ export class ServiceDataService {
     },
   ];
 
+  costOfService: number = 0;
+  costOfEquipment: number = 0;
+  costOfSpecialRequest: number = 0;
+
   constructor() {}
 
   getServices() {
     return this.services;
+  }
+
+  getCostOfService() {
+    return this.costOfService;
+  }
+
+  getCostOfEquipment() {
+    return this.costOfEquipment;
+  }
+
+  getCostOfSpecialRequest() {
+    return this.costOfSpecialRequest;
   }
 }
