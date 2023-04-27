@@ -1,3 +1,7 @@
 body {
   background-color: gray;
 }
+.btn {
+  /* margin: 10px; */
+  margin-left: 30px;
+}

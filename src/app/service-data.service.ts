@@ -50,11 +50,23 @@ export class ServiceDataService {
     return this.costOfService;
   }
 
+  setCostOfService(price: number) {
+    this.costOfService = price;
+  }
+
   getCostOfEquipment() {
     return this.costOfEquipment;
   }
 
+  setCostOfEquipment(price: number) {
+    this.costOfEquipment = price;
+  }
+
   getCostOfSpecialRequest() {
     return this.costOfSpecialRequest;
+  }
+
+  setCostOfSpecialRequest(price: number) {
+    this.costOfSpecialRequest = price;
   }
 }
