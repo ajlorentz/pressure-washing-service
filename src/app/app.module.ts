@@ -6,6 +6,7 @@ import { SchedulingComponent } from './scheduling/scheduling.component';
 import { ServicesComponent } from './services/services.component';
 import { SchedulingEquipmentComponent } from './scheduling-equipment/scheduling-equipment.component';
 import { SchedulingServiceComponent } from './scheduling-service/scheduling-service.component';
+import { SchedulingPaymentComponent } from './scheduling-payment/scheduling-payment.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SchedulingServiceComponent } from './scheduling-service/scheduling-serv
     ServicesComponent,
     SchedulingServiceComponent,
     SchedulingEquipmentComponent,
+    SchedulingPaymentComponent,
   ],
   imports: [BrowserModule],
   providers: [],

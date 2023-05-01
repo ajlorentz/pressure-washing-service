@@ -13,15 +13,24 @@ export class SchedulingComponent implements OnInit {
 
   showEquipmentPage: boolean = false;
   showServicePage: boolean = true;
+  showPaymentPage: boolean = false;
 
   toggleServicePage() {
     this.showEquipmentPage = false;
     this.showServicePage = true;
+    this.showPaymentPage = false;
   }
 
   toggleEquipmentPage() {
     this.showEquipmentPage = true;
     this.showServicePage = false;
+    this.showPaymentPage = false;
+  }
+
+  togglePaymentPage() {
+    this.showEquipmentPage = false;
+    this.showServicePage = false;
+    this.showPaymentPage = true;
   }
 
   ngOnInit() {}
