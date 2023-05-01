@@ -4,9 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SchedulingComponent } from './scheduling/scheduling.component';
 import { ServicesComponent } from './services/services.component';
+import { SchedulingEquipmentComponent } from './scheduling-equipment/scheduling-equipment.component';
+import { SchedulingServiceComponent } from './scheduling-service/scheduling-service.component';
 
 @NgModule({
-  declarations: [AppComponent, SchedulingComponent, ServicesComponent],
+  declarations: [
+    AppComponent,
+    SchedulingComponent,
+    ServicesComponent,
+    SchedulingServiceComponent,
+    SchedulingEquipmentComponent,
+  ],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
