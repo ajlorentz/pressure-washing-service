@@ -11,8 +11,9 @@ export class ServicesComponent implements OnInit {
 
   @Input() service: { id: number; serviceType: string; pricePerSqFt: number };
 
-  changeCostOfService(area: number, price: number) {
-    this.services.setCostOfService(area * price);
+  changeCostOfService(area: string) {
+    this.services.setCostOfService(this.service.pricePerSqFt * parseInt(area));
+    console.log(this.services.getCostOfService());
   }
 
   ngOnInit() {}
