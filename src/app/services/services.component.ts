@@ -13,7 +13,6 @@ export class ServicesComponent implements OnInit {
 
   changeCostOfService(area: string) {
     this.services.setCostOfService(this.service.pricePerSqFt * parseInt(area));
-    console.log(this.services.getCostOfService());
   }
 
   ngOnInit() {}

@@ -16,5 +16,10 @@ export class EquipmentComponent implements OnInit {
     cost: number;
   };
 
+  changeCostOfEquipment() {
+    this.equipments.setCostOfSelectedWasher(this.equipment.cost);
+    console.log(this.equipments.costOfSelectedWasher);
+  }
+
   ngOnInit() {}
 }
