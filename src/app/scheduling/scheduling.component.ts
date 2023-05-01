@@ -12,7 +12,17 @@ export class SchedulingComponent implements OnInit {
   service_list = this.services.getServices();
 
   showEquipmentPage: boolean = false;
-  showSchedulingPage: boolean = true;
+  showServicePage: boolean = true;
+
+  toggleServicePage() {
+    this.showEquipmentPage = false;
+    this.showServicePage = true;
+  }
+
+  toggleEquipmentPage() {
+    this.showEquipmentPage = true;
+    this.showServicePage = false;
+  }
 
   ngOnInit() {}
 }

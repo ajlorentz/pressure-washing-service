@@ -1,6 +1,11 @@
-<app-scheduling-service></app-scheduling-service>
+<app-scheduling-service *ngIf="showServicePage"></app-scheduling-service>
+<app-scheduling-equipment *ngIf="showEquipmentPage"></app-scheduling-equipment>
 
 <div>
-  <button class="btn btn-warning btn-lg">Service</button>
-  <button class="btn btn-warning btn-lg">Equipment</button>
+  <button class="btn btn-warning btn-lg" (click)="toggleServicePage()">
+    Service
+  </button>
+  <button class="btn btn-warning btn-lg" (click)="toggleEquipmentPage()">
+    Equipment
+  </button>
 </div>

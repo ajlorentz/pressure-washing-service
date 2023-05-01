@@ -42,5 +42,9 @@ export class EquipmentDataService {
     this.costOfSelectedWasher = cost;
   }
 
+  getEquipment() {
+    return this.equipment;
+  }
+
   constructor() {}
 }

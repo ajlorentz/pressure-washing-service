@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EquipmentDataService } from '../equipment-data.service';
 
 @Component({
   selector: 'app-scheduling-equipment',
@@ -6,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scheduling-equipment.component.css'],
 })
 export class SchedulingEquipmentComponent implements OnInit {
-  constructor() {}
+  constructor(private equipment: EquipmentDataService) {}
 
-  
+  equipment_list = this.equipment.getEquipment();
 
   ngOnInit() {}
 }
