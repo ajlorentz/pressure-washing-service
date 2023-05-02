@@ -7,7 +7,7 @@ import { ServicesComponent } from './services/services.component';
 import { SchedulingEquipmentComponent } from './scheduling-equipment/scheduling-equipment.component';
 import { SchedulingServiceComponent } from './scheduling-service/scheduling-service.component';
 import { SchedulingPaymentComponent } from './scheduling-payment/scheduling-payment.component';
-import { EquipmentComponent } from './equipment-equipment.component';
+import { EquipmentComponent } from './equipment/equipment.component';
 
 @NgModule({
   declarations: [
