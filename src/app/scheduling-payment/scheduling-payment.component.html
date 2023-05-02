@@ -9,8 +9,21 @@
   <div class="card my-2 p-2">
     <div class="card-body mx-auto text-center" style="wdith=18px"></div>
 
-    <label for="specialRequest">Special Requests?</label>
-    <input type="text" id="specialRequest" />
+    <label for="specialRequest"
+      >Special Requests? If yes, detail them below. Cost for special requests
+      are $15.</label
+    >
+    <div>
+      <button class="btn btn-primary" (click)="setSpecialRequestCost(15)">
+        Yes
+      </button>
+    </div>
+    <div>
+      <button class="btn btn-primary" (click)="setSpecialRequestCost(0)">
+        No
+      </button>
+    </div>
+    <input #specialRequest type="text" id="specialRequest" />
   </div>
 </div>
 
@@ -21,8 +34,8 @@
     <h2>Review</h2>
     <p>Cost of Service: {{ costOfService }}</p>
     <p>Cost of Equipment: {{ costOfEquipment }}</p>
-    <p>Cost of Special Request:</p>
-    <h3>Total:</h3>
+    <p>Cost of Special Request: {{ costOfSpecialRequest }}</p>
+    <h3>Total: {{ totalCost }}</h3>
   </div>
 </div>
 

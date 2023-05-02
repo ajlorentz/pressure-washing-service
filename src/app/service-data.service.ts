@@ -37,6 +37,7 @@ export class ServiceDataService {
   ];
 
   costOfService: number = 0;
+  costOfSpecialRequest: number = 0;
 
   constructor() {}
 
@@ -50,5 +51,13 @@ export class ServiceDataService {
 
   setCostOfService(price: number) {
     this.costOfService = price;
+  }
+
+  getCostOfSpecialRequest() {
+    return this.costOfSpecialRequest;
+  }
+
+  setCostOfSpecialRequest(cost: number) {
+    this.costOfSpecialRequest = cost;
   }
 }

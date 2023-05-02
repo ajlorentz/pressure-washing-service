@@ -15,6 +15,17 @@ export class SchedulingPaymentComponent implements OnInit {
 
   costOfService: number = this.service.getCostOfService();
   costOfEquipment: number = this.equipment.getCostOfSelectedWasher();
+  costOfSpecialRequest: number = this.service.getCostOfSpecialRequest();
+
+  totalCost: number =
+    this.costOfService + this.costOfEquipment + this.costOfSpecialRequest;
+
+  setSpecialRequestCost(cost: number) {
+    this.service.setCostOfSpecialRequest(cost);
+    this.costOfSpecialRequest = this.service.getCostOfSpecialRequest();
+    this.totalCost =
+      this.costOfService + this.costOfEquipment + this.costOfSpecialRequest;
+  }
 
   ngOnInit() {}
 }

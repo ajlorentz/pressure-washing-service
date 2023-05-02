@@ -18,7 +18,7 @@ export class EquipmentComponent implements OnInit {
 
   changeCostOfEquipment() {
     this.equipments.setCostOfSelectedWasher(this.equipment.cost);
-    console.log(this.equipments.costOfSelectedWasher);
+    
   }
 
   ngOnInit() {}
