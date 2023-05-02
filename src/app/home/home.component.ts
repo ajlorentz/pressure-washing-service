@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
     {text: `<img src="https://media.istockphoto.com/id/1336188285/photo/exterior-cleaning-work-in-progress.jpg?s=612x612&w=0&k=20&c=7dQgl7S4Sz6AETT5ycw4fockeSKnjYQfmFcg0QZwYaU=" alt="washing siding">`, cols: 4, rows: 4, color: 'lightgreen'},
     {text: '', cols: 4, rows: 3, color: ''},
     {text: `
+    <div class="about-tile">
     <h2>About</h2>
 
     <p>Welcome to our pressure washing company! We are a team of dedicated professionals who are passionate about delivering top-quality pressure washing services to our clients.</p>
@@ -39,7 +40,7 @@ export class HomeComponent implements OnInit {
     <p>We are fully licensed and insured, and we adhere to all safety regulations to ensure a safe and efficient service. We also use eco-friendly cleaning products, so you can feel good about the impact our services have on the environment.</p>
     
     <p>Thank you for considering our pressure washing company for your cleaning needs. We look forward to helping you achieve a cleaner, brighter exterior for your home or business.</p>
-
+    </div>
   `, cols: 3, rows: 9, color: 'lightgreen'},
     {text: '', cols: 1, rows: 6, color: ''},
     {text: '', cols: 5, rows: 1, color: ''},

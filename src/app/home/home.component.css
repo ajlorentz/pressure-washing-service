@@ -1,3 +1,10 @@
 h2{
   text-align: center;
 }
+
+.mat-grid-tile{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
