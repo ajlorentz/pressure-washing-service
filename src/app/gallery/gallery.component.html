@@ -1,1 +1,7 @@
-<p>pizza french-fry</p>
+<h1>Image Gallery</h1>
+
+<div class="image-container">
+  <div class="image-item" *ngFor="let image of images">
+    <img [src]="image" alt="Image">
+  </div>
+</div>

@@ -7,13 +7,13 @@ nav a {
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-  background-color: gold;
+  background-color: lightgreen;
   color: black;
   border-radius: 4px;
 }
 
 nav a:hover {
-  color: gold;
+  color: lightgreen;
   background-color: black;
 }
 nav a:active {
