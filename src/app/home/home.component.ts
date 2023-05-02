@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   tiles: Tile[] = [
     {text: '', cols: 4, rows: 2, color: ''},
     {text: `
-    <img src=
+    <img src="images/home-washing1.jpg" alt="washing">
     `, cols: 4, rows: 3, color: 'lightgreen'},
     {text: '', cols: 4, rows: 3, color: ''},
     {text: `
