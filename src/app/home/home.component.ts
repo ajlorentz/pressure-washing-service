@@ -21,7 +21,18 @@ export class HomeComponent implements OnInit {
 
   tiles: Tile[] = [
     {text: '', cols: 4, rows: 2, color: ''},
-    {text: '', cols: 3, rows: 1, color: ''},
+    {text: `
+    <img src=
+    `, cols: 4, rows: 3, color: 'lightgreen'},
+    {text: '', cols: 4, rows: 3, color: ''},
+    {text: `
+    <h2>About</h2>
+
+    <p>This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us This is where we will have all the information about us </p>
+
+  `, cols: 3, rows: 4, color: 'lightgreen'},
+    {text: '', cols: 1, rows: 5, color: ''},
+    {text: '', cols: 5, rows: 1, color: ''},
     {text: `
       <h2>Contact Us</h2>
   
@@ -32,9 +43,9 @@ export class HomeComponent implements OnInit {
         <li><strong>Phone:</strong> (701) 777-7700</li>
         <li><strong>Address:</strong> 123 Main St, Fargo, ND</li>
       </ul>
-    `, cols: 1, rows: 2, color: 'lightgreen'},
-    {text: '', cols: 1, rows: 1, color: ''},
-    {text: '', cols: 2, rows: 1, color: ''},
+    `, cols: 3, rows: 2, color: 'lightgreen'},
+    {text: '', cols: 4, rows: 1, color: ''},
+    {text: '', cols: 4, rows: 3, color: 'lightgreen'},
   ];
   
 
