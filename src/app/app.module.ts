@@ -8,6 +8,7 @@ import { SchedulingEquipmentComponent } from './scheduling-equipment/scheduling-
 import { SchedulingServiceComponent } from './scheduling-service/scheduling-service.component';
 import { SchedulingPaymentComponent } from './scheduling-payment/scheduling-payment.component';
 import { EquipmentComponent } from './equipment/equipment.component';
+import { SchedulingFinalComponent } from './scheduling-final/scheduling-final.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { EquipmentComponent } from './equipment/equipment.component';
     SchedulingEquipmentComponent,
     SchedulingPaymentComponent,
     EquipmentComponent,
+    SchedulingFinalComponent,
   ],
   imports: [BrowserModule],
   providers: [],
