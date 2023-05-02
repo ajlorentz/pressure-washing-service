@@ -58,7 +58,14 @@
     <p>Apartment Number (Optional)</p>
     <input type="text" />
     <div>
-      <button class="btn btn-primary">Submit Payment</button>
+      <button class="btn btn-primary" (click)="toggleFinalMessage()">
+        Submit Payment
+      </button>
+    </div>
+    <div>
+      <app-scheduling-final
+        *ngIf="isFinalMessageShowing"
+      ></app-scheduling-final>
     </div>
   </div>
 </div>
