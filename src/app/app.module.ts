@@ -8,11 +8,13 @@ import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ReviewMainComponent } from './review-main/review-main.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { AddReviewComponent } from './add-review/add-review.component';
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, GalleryComponent, ReviewMainComponent],
-  imports: [BrowserModule, MatGridListModule, AppRoutingModule, HttpClientModule],
+  declarations: [AppComponent, HomeComponent, GalleryComponent, ReviewMainComponent, AddReviewComponent],
+  imports: [BrowserModule, MatGridListModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

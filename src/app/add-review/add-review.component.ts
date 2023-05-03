@@ -1,7 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ReviewService } from '../review.service';
-import { Review } from 'src/app/review-main/review-main.component';
+
+
+
+export interface Review {
+  name: string;
+  rating: string;
+  description: string;
+}
 
 
 @Component({
