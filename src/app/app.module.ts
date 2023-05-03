@@ -7,11 +7,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ReviewMainComponent } from './review-main/review-main.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, GalleryComponent, ReviewMainComponent],
-  imports: [BrowserModule, MatGridListModule, AppRoutingModule],
+  imports: [BrowserModule, MatGridListModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
