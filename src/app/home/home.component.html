@@ -5,6 +5,8 @@
     [colspan]="tile.cols"
     [rowspan]="tile.rows"
     [style.background]="tile.color"
-    [innerHTML]="tile.text">
+    [innerHTML]="tile.text"
+    [class.lightgreen-tile]="tile.color.includes('green')"
+    [class.black-tile]="tile.color.includes('black')">
   </mat-grid-tile>
 </mat-grid-list>
