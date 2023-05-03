@@ -8,7 +8,10 @@ export interface Review {
   description: string;
 }
 
-@Injectable()
+@Injectable({
+  providedIn:'root'
+})
+
 export class ReviewService {
 
   private serverUrl = '';

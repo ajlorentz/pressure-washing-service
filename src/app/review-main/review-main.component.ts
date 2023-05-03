@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ReviewService } from '../review.service';
 
+
 export interface Review {
   name: string;
   rating: string;
   description: string;
 }
+
 
 @Component({
   selector: 'app-review-main',
