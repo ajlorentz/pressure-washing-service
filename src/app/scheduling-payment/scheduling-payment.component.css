@@ -6,3 +6,9 @@
 h2 {
   text-decoration: underline;
 }
+
+.specialRequest-card,
+.costReview-card,
+.billingInfo-card {
+  width: 500px;
+}
