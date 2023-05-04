@@ -12,13 +12,13 @@
       <div class="col-sm-4">
           <form (submit)="addNewReview()">
               <div class="mb-2">
-                  <input [(ngModel)]="review.name" class="form-control" name="name" placeholder="Name" type="text">
+                  <input [(ngModel)]="rName" class="form-control" name="name" placeholder="Name" type="text">
               </div>
               <div class="mb-2">
-                  <input [(ngModel)]="review.rating" class="form-control" name="rating" placeholder="Rating" type="rating">
+                  <input [(ngModel)]="rRating" class="form-control" name="rating" placeholder="Rating" type="rating">
               </div>
               <div class="mb-2">
-                  <input [(ngModel)]="review.description" class="form-control" name="description" placeholder="Description" type="text">
+                  <input [(ngModel)]="rDescription" class="form-control" name="description" placeholder="Description" type="text">
               </div>
               <div class="mb-2">
                   <!-- <input class="btn btn-success" value="Create" type="submit"> -->

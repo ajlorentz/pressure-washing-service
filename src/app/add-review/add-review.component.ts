@@ -5,8 +5,9 @@ import { HttpClient } from '@angular/common/http';
 
 
 export interface Review {
+  id: number;
   name: string;
-  rating: string;
+  rating: number;
   description: string;
 }
 
@@ -21,12 +22,14 @@ export class AddReviewComponent implements OnInit {
 
   constructor(private reviewService: ReviewService,
               private router: Router, private http: HttpClient) { }
-
+    
+    rId: number = 0;
     rName: string;
-    rRating: string;
+    rRating: number;
     rDescription: string;
 
   ngOnInit() {
+    this.rId = this.reviewService.getNextID();
   }
 
   // public createSubmit() {
@@ -38,6 +41,7 @@ export class AddReviewComponent implements OnInit {
 
   addNewReview() {
     const newReview: Review = {
+      id: this.rId,
       name: this.rName,
       rating: this.rRating,
       description: this.rDescription,

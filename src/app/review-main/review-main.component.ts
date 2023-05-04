@@ -4,8 +4,9 @@ import { ReviewService } from '../review.service';
 
 
 export interface Review {
+  id: number;
   name: string;
-  rating: string;
+  rating: number;
   description: string;
 }
 
