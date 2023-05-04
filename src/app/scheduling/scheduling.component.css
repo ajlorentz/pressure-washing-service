@@ -1,3 +1,7 @@
 .btn-warning {
   margin: 4px;
 }
+
+body {
+  background-color: grey;
+}

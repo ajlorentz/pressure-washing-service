@@ -6,22 +6,22 @@
 />
 
 <div class="service-card">
-  <div class="card my-2 p-2">
-    <div class="card-body mx-auto text-center" style="wdith=18px"></div>
+  <!-- <div class="card my-2 p-2"> -->
+  <div class="card-body mx-auto text-center" style="wdith=18px"></div>
 
-    <h1>List of services</h1>
+  <h1>List of services</h1>
 
-    <div>
-      <p>Choose a date for appointment:</p>
-      <input type="date" id="datePicker" />
-    </div>
-    <div>
-      <input type="checkbox" id="recurringAppointment" />
-      <label for="recurringAppointment">Recurring Appointment?</label>
-    </div>
-
-    <div class="services" *ngFor="let s of service_list">
-      <app-services [service]="s"></app-services>
-    </div>
+  <div>
+    <p>Choose a date for appointment:</p>
+    <input type="date" id="datePicker" />
   </div>
+  <div>
+    <input type="checkbox" id="recurringAppointment" />
+    <label for="recurringAppointment">Recurring Appointment?</label>
+  </div>
+
+  <div class="services" *ngFor="let s of service_list">
+    <app-services [service]="s"></app-services>
+  </div>
+  <!-- </div> -->
 </div>

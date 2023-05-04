@@ -1,15 +1,19 @@
-<app-scheduling-service *ngIf="showServicePage"></app-scheduling-service>
-<app-scheduling-equipment *ngIf="showEquipmentPage"></app-scheduling-equipment>
-<app-scheduling-payment *ngIf="showPaymentPage"></app-scheduling-payment>
+<body>
+  <app-scheduling-service *ngIf="showServicePage"></app-scheduling-service>
+  <app-scheduling-equipment
+    *ngIf="showEquipmentPage"
+  ></app-scheduling-equipment>
+  <app-scheduling-payment *ngIf="showPaymentPage"></app-scheduling-payment>
 
-<div>
-  <button class="btn btn-warning btn-lg" (click)="toggleServicePage()">
-    Service
-  </button>
-  <button class="btn btn-warning btn-lg" (click)="toggleEquipmentPage()">
-    Equipment
-  </button>
-  <button class="btn btn-warning btn-lg" (click)="togglePaymentPage()">
-    Review/Payment
-  </button>
-</div>
+  <div>
+    <button class="btn btn-warning btn-lg" (click)="toggleServicePage()">
+      Service
+    </button>
+    <button class="btn btn-warning btn-lg" (click)="toggleEquipmentPage()">
+      Equipment
+    </button>
+    <button class="btn btn-warning btn-lg" (click)="togglePaymentPage()">
+      Review/Payment
+    </button>
+  </div>
+</body>
