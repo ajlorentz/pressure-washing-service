@@ -14,7 +14,7 @@ export interface Review {
 
 export class ReviewService {
 
-  private serverUrl = '';
+  private serverUrl = 'https://customerinfo-52cc7-default-rtdb.firebaseio.com/';
 
   constructor(private http: HttpClient) { }
 
