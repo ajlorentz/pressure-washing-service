@@ -19,9 +19,10 @@
     <input type="checkbox" id="recurringAppointment" />
     <label for="recurringAppointment">Recurring Appointment?</label>
   </div>
-
+<div class="service-container">
   <div class="services" *ngFor="let s of service_list">
     <app-services [service]="s"></app-services>
   </div>
+</div>
   <!-- </div> -->
 </div>

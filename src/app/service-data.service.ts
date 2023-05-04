@@ -34,6 +34,12 @@ export class ServiceDataService {
       serviceType: 'Siding Wash',
       pricePerSqFt: 2,
     },
+
+    {
+      id: 6,
+      serviceType: 'Commercial Building Wash',
+      pricePerSqFt: 5,
+    },
   ];
 
   costOfService: number = 0;

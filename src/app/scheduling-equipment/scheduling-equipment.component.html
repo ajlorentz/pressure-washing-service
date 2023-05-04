@@ -7,12 +7,14 @@
 
 <div class="equipment-card">
   <!-- <div class="card my-2 p-2"> -->
-  <div class="card-body mx-auto text-center" style="wdith=18px"></div>
+  <div class="card-body mx-auto text-center" style="width=18px"></div>
 
   <h1>List of Equipment</h1>
 
+  <div class="service-container">
   <div class="equipment" *ngFor="let e of equipment_list">
     <app-equipment [equipment]="e"></app-equipment>
+  </div>
   </div>
   <!-- </div> -->
 </div>
