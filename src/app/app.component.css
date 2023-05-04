@@ -9,7 +9,7 @@ nav a {
   display: inline-block;
   background-color: lightgreen;
   color: black;
-  border-radius: 4px;
+  border-style: solid;
 }
 
 nav a:hover {

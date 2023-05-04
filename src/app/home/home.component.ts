@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   tiles: Tile[] = [
     {text: '', cols: 4, rows: 1, color: ''},
-    {text: `<img src="https://media.istockphoto.com/id/1336188285/photo/exterior-cleaning-work-in-progress.jpg?s=612x612&w=0&k=20&c=7dQgl7S4Sz6AETT5ycw4fockeSKnjYQfmFcg0QZwYaU=" alt="washing siding">`, cols: 4, rows: 4, color: 'lightgreen'},
+    {text: `<img src="https://media.istockphoto.com/id/1336188285/photo/exterior-cleaning-work-in-progress.jpg?s=612x612&w=0&k=20&c=7dQgl7S4Sz6AETT5ycw4fockeSKnjYQfmFcg0QZwYaU=" alt="washing siding">`, cols: 4, rows: 4, color: 'black'},
     {text: '', cols: 4, rows: 3, color: ''},
     {text: `
     <div class="about-tile">
@@ -56,9 +56,9 @@ export class HomeComponent implements OnInit {
       </ul>
     `, cols: 3, rows: 2, color: 'lightgreen'},
     {text: '', cols: 4, rows: 1, color: ''},
-    {text: `<img src="https://media.istockphoto.com/id/1306260764/photo/man-cleaning-red-conrete-pavement-block-using-high-pressure-water-cleaner-paving-cleaning.jpg?s=612x612&w=0&k=20&c=Rfqp12b1yGUiOhHGF86HmqtGlfotrtIebnDgw_LuXAQ=" alt="washing brick">`, cols: 4, rows: 4, color: 'lightgreen'},
+    {text: `<img src="https://media.istockphoto.com/id/1306260764/photo/man-cleaning-red-conrete-pavement-block-using-high-pressure-water-cleaner-paving-cleaning.jpg?s=612x612&w=0&k=20&c=Rfqp12b1yGUiOhHGF86HmqtGlfotrtIebnDgw_LuXAQ=" alt="washing brick">`, cols: 4, rows: 4, color: 'black'},
     {text: '', cols: 12, rows: 1, color: ''},
-    {text: '', cols: 12, rows: 1, color: '#198754'},
+    {text: '', cols: 12, rows: 1, color: 'lightgreen'},
   ];
   
 
