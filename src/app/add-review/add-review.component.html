@@ -10,7 +10,7 @@
 <div class="container">
   <div class="row">
       <div class="col-sm-4">
-          <form (submit)="createSubmit()">
+          <form (submit)="addNewReview()">
               <div class="mb-2">
                   <input [(ngModel)]="review.name" class="form-control" name="name" placeholder="Name" type="text">
               </div>
@@ -21,7 +21,14 @@
                   <input [(ngModel)]="review.description" class="form-control" name="description" placeholder="Description" type="text">
               </div>
               <div class="mb-2">
-                  <input class="btn btn-success" value="Create" type="submit">
+                  <!-- <input class="btn btn-success" value="Create" type="submit"> -->
+                  <button
+          class="btn btn-primary"
+          routerLink="/"
+          (click)="addNewReview()"
+        >
+          Create Review
+        </button>
                   <a class="btn btn-dark ms-2" routerLink="/">Close</a>
               </div>
           </form>

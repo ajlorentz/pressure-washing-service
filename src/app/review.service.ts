@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 export interface Review {
   name: string;
@@ -14,16 +15,43 @@ export interface Review {
 
 export class ReviewService {
 
-  private serverUrl = 'https://customerinfo-52cc7-default-rtdb.firebaseio.com/';
+  private serverUrl = 'https://customerinfo-52cc7-default-rtdb.firebaseio.com/' + 'review.json';
 
   constructor(private http: HttpClient) { }
 
-  public getAllReviews(): Observable<Review[]>{
-    return this.http.get<Review[]>(this.serverUrl).pipe();
+  // public getAllReviews(): Observable<Review[]>{
+  //   return this.http.get<Review[]>(this.serverUrl).pipe();
+  // }
+
+  // public createReview(review: Review): Observable<Review>{
+  //   return this.http.post<Review>(this.serverUrl, review).pipe();
+  // }
+
+  // createReview(newReview: Review) {
+  //   return this.http.post(
+  //     this.serverUrl,
+  //     newReview
+  //   );
+  // }
+
+  createReview(newRev: Review){
+    return this.http.post(
+      'https://customerinfo-52cc7-default-rtdb.firebaseio.com/' + 'review.json',
+      newRev
+    );
   }
 
-  public createReview(review: Review): Observable<Review>{
-    return this.http.post<Review>(this.serverUrl, review).pipe();
+  getAllReviews(): Observable<Review[]> {
+    return this.http
+      .get<Review[]>(
+        'https://customerinfo-52cc7-default-rtdb.firebaseio.com/' + 'review.json'
+      )
+      .pipe(
+        map((responseData) => {
+          const reviewArray: Review[] = [];
+          for (let key in responseData) reviewArray.push(responseData[key]);
+          return reviewArray;
+        })
+      );
   }
-
 }
