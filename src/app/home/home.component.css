@@ -1,0 +1,21 @@
+h2{
+  text-align: center;
+}
+
+.mat-grid-tile{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* border-style: solid; */
+}
+
+.lightgreen-tile {
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.black-tile {
+  border: 4px solid black;
+  /* padding: 10px; */
+}

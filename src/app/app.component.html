@@ -1,7 +1,19 @@
-<body>
-  <button class="btn btn-success btn-lg">Home</button>
-  <button class="btn btn-success btn-lg">Scheduling</button>
-  <button class="btn btn-success btn-lg">Reviews</button>
-
-  <app-scheduling></app-scheduling>
-</body>
+<!-- <nav class="navbar justify-content-center">
+  <form class="form-inline ng-untouched ng-pristine ng-valid">
+    <button type="button" class="btn btn-success">HOME</button>
+    <button type="button" class="btn btn-success">SCHEDULE CLEANING</button>
+    <button type="button" class="btn btn-success">CLEANING SERVICES</button>
+    <button type="button" class="btn btn-success">GALLERY</button>
+    <button type="button" class="btn btn-success">REVIEWS</button>
+    <button type="button" class="btn btn-success">SALES</button>
+  </form>
+</nav> -->
+<nav>
+  <a routerLink="/home">HOME</a>
+  <a routerLink="/schedule-cleaning">SCHEDULE CLEANING</a>
+  <a routerLink="/cleaning-services">CLEANING SERVICES</a>
+  <a routerLink="/gallery">GALLERY</a>
+  <a routerLink="/reviews">REVIEWS</a>
+</nav>
+<router-outlet></router-outlet>
+<!-- <app-home></app-home> -->

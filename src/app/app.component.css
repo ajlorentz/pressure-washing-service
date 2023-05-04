@@ -1,7 +1,22 @@
-body {
-  background-color: gray;
+
+nav {
+  text-align: center;
 }
-.btn {
-  /* margin: 10px; */
-  margin-left: 30px;
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: lightgreen;
+  color: black;
+  border-style: solid;
+}
+
+nav a:hover {
+  color: lightgreen;
+  background-color: black;
+}
+nav a:active {
+  background-color: black;
 }
