@@ -56,12 +56,6 @@ export class ServiceDataService {
 
   constructor(private http: HttpClient) {}
 
-  nextID: number = 0;
-
-  getNextID(): number {
-    return ++this.nextID;
-  }
-
   getAllServices(): Observable<Service[]> {
     return this.http
       .get<Service[]>(

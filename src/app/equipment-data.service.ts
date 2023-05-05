@@ -1,4 +1,14 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, of } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+export interface Equipment {
+  id: number;
+  name: string;
+  description: string;
+  cost: number;
+}
 
 @Injectable({
   providedIn: 'root',
@@ -48,5 +58,20 @@ export class EquipmentDataService {
     return this.equipment;
   }
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
+
+  getAllEquipment(): Observable<Equipment[]> {
+    return this.http
+      .get<Equipment[]>(
+        'https://group-project-7015a-default-rtdb.firebaseio.com/' +
+          'service.json'
+      )
+      .pipe(
+        map((responseData) => {
+          const equipmentArray: Equipment[] = [];
+          for (let key in responseData) equipmentArray.push(responseData[key]);
+          return equipmentArray;
+        })
+      );
+  }
 }
