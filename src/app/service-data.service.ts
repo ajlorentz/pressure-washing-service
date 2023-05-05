@@ -1,4 +1,13 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, of } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+export interface Service {
+  id: number;
+  serviceType: string;
+  pricePerSqFt: number;
+}
 
 @Injectable({
   providedIn: 'root',
@@ -45,7 +54,28 @@ export class ServiceDataService {
   costOfService: number = 0;
   costOfSpecialRequest: number = 0;
 
-  constructor() {}
+  constructor(private http: HttpClient) {}
+
+  nextID: number = 0;
+
+  getNextID(): number {
+    return ++this.nextID;
+  }
+
+  getAllServices(): Observable<Service[]> {
+    return this.http
+      .get<Service[]>(
+        'https://group-project-7015a-default-rtdb.firebaseio.com/' +
+          'service.json'
+      )
+      .pipe(
+        map((responseData) => {
+          const serviceArray: Service[] = [];
+          for (let key in responseData) serviceArray.push(responseData[key]);
+          return serviceArray;
+        })
+      );
+  }
 
   getServices() {
     return this.services;
