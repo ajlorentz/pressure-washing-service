@@ -29,9 +29,12 @@ export class SchedulingServiceComponent implements OnInit {
     });
   }
 
-  // changeCostOfService(area: string) {
-  //   this.service.setCostOfService(this.service.pricePerSqFt * parseInt(area));
-  // }
+  changeCostOfService(index: number, area: string) {
+    const service = this.services[index];
+    if (service) {
+      this.service.setCostOfService(service.pricePerSqFt * parseInt(area));
+    }
+  }
 
   // addNewService() {
   //   const newService: Service = {

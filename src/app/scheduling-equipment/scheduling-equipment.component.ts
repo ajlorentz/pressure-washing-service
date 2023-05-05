@@ -21,7 +21,7 @@ export class SchedulingEquipmentComponent implements OnInit {
   equipment_list = this.equipment.getEquipment();
 
   ngOnInit() {
-    //this.getAllServicesFromServer()
+    this.getAllEquipmentFromServer();
   }
 
   public getAllEquipmentFromServer() {
