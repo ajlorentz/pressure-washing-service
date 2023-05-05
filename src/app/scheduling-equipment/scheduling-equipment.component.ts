@@ -30,6 +30,13 @@ export class SchedulingEquipmentComponent implements OnInit {
     });
   }
 
+  changeCostOfEquipment(index: number) {
+    const equipment = this.equipmentList[index];
+    if (equipment) {
+      this.equipment.setCostOfSelectedWasher(equipment.cost);
+    }
+  }
+
   // addNewEquipment() {
   //   const newEquipment: Equipment = {
   //     id: 4,
