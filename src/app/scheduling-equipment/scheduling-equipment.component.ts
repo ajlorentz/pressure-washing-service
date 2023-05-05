@@ -29,4 +29,18 @@ export class SchedulingEquipmentComponent implements OnInit {
       this.equipmentList = data;
     });
   }
+
+  // addNewEquipment() {
+  //   const newEquipment: Equipment = {
+  //     id: 4,
+  //     name: 'Ultra-Strength Washer',
+  //     description: 'Extremely forceful washer for crusted, engrained cleaning',
+  //     cost: 130,
+  //   };
+  //   this.equipment
+  //     .addEquipment(newEquipment)
+  //     .subscribe((data) => console.log(data));
+
+  //   this.equipment.getAllEquipment().subscribe();
+  // }
 }

@@ -71,6 +71,14 @@ export class ServiceDataService {
       );
   }
 
+  addService(newService: Service) {
+    return this.http.post(
+      'https://group-project-7015a-default-rtdb.firebaseio.com/' +
+        'service.json',
+      newService
+    );
+  }
+
   getServices() {
     return this.services;
   }

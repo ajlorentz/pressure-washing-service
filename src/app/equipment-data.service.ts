@@ -74,4 +74,13 @@ export class EquipmentDataService {
         })
       );
   }
+
+  // addEquipment(newEquipment: Equipment) {
+  //   return this.http.post(
+  //     'https://group-project-7015a-default-rtdb.firebaseio.com/' +
+  //       'equipment.json',
+  //     newEquipment
+  //   );
+  // }
+
 }

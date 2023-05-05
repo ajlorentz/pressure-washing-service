@@ -28,4 +28,15 @@ export class SchedulingServiceComponent implements OnInit {
       this.services = data;
     });
   }
+
+  // addNewService() {
+  //   const newService: Service = {
+  //     id: 6,
+  //     serviceType: 'Commercial Building Wash',
+  //     pricePerSqFt: 5,
+  //   };
+  //   this.service.addService(newService).subscribe((data) => console.log(data));
+
+  //   this.service.getAllServices().subscribe();
+  // }
 }

@@ -12,9 +12,12 @@
   <h1>List of Equipment</h1>
 
   <div class="service-container">
-  <div class="equipment" *ngFor="let e of equipment_list">
-    <app-equipment [equipment]="e"></app-equipment>
-  </div>
+    <div class="equipment" *ngFor="let e of equipment_list">
+      <app-equipment [equipment]="e"></app-equipment>
+    </div>
   </div>
   <!-- </div> -->
 </div>
+<!-- <button class="btn btn-danger" (click)="addNewEquipment()">
+  Add new equipment
+</button> -->
