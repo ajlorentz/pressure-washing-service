@@ -64,7 +64,7 @@ export class EquipmentDataService {
     return this.http
       .get<Equipment[]>(
         'https://group-project-7015a-default-rtdb.firebaseio.com/' +
-          'service.json'
+          'equipment.json'
       )
       .pipe(
         map((responseData) => {
@@ -82,5 +82,4 @@ export class EquipmentDataService {
   //     newEquipment
   //   );
   // }
-
 }
