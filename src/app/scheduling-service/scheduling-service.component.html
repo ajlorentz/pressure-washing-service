@@ -16,13 +16,17 @@
     <input type="date" id="datePicker" />
   </div>
   <div>
+    <p>Choose a time for appointment:</p>
+    <input type="time" id="timePicker" />
+  </div>
+  <div>
     <input type="checkbox" id="recurringAppointment" />
     <label for="recurringAppointment">Recurring Appointment?</label>
   </div>
-<div class="service-container">
-  <div class="services" *ngFor="let s of service_list">
-    <app-services [service]="s"></app-services>
+  <div class="service-container">
+    <div class="services" *ngFor="let s of service_list">
+      <app-services [service]="s"></app-services>
+    </div>
   </div>
-</div>
   <!-- </div> -->
 </div>
