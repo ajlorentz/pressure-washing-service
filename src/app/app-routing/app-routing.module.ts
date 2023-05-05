@@ -5,7 +5,7 @@ import { GalleryComponent } from '../gallery/gallery.component';
 import { ReviewMainComponent } from '../review-main/review-main.component';
 import { AddReviewComponent } from '../add-review/add-review.component';
 import { SchedulingComponent } from '../scheduling/scheduling.component';
-
+import { EmploymentComponent } from '../employment/employment.component';
 
 const routes: Routes = [
   { path: 'gallery', component: GalleryComponent },
@@ -13,12 +13,13 @@ const routes: Routes = [
   { path: 'schedule-cleaning', component: SchedulingComponent },
   { path: 'reviews', component: ReviewMainComponent },
   { path: 'reviews/add', component: AddReviewComponent },
+  { path: 'employment', component: EmploymentComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  declarations: []
+  declarations: [],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
