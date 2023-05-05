@@ -20,7 +20,7 @@ export class SchedulingServiceComponent implements OnInit {
   service_list = this.service.getServices();
 
   ngOnInit() {
-    // this.getAllServicesFromServer();
+    this.getAllServicesFromServer();
   }
 
   public getAllServicesFromServer() {
@@ -28,6 +28,12 @@ export class SchedulingServiceComponent implements OnInit {
       this.services = data;
     });
   }
+
+  // changeCostOfService(area: string) {
+  //   this.service.setCostOfService(
+  //     this.services.pricePerSqFt * parseInt(area)
+  //   );
+  // }
 
   // addNewService() {
   //   const newService: Service = {
