@@ -30,9 +30,7 @@ export class SchedulingServiceComponent implements OnInit {
   }
 
   // changeCostOfService(area: string) {
-  //   this.service.setCostOfService(
-  //     this.services.pricePerSqFt * parseInt(area)
-  //   );
+  //   this.service.setCostOfService(this.service.pricePerSqFt * parseInt(area));
   // }
 
   // addNewService() {
