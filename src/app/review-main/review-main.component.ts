@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ReviewService } from '../review.service';
 
-
-
 export interface Review {
   id: number;
   name: string;
@@ -10,6 +8,12 @@ export interface Review {
   description: string;
 }
 
+export interface Tile {
+  color: string;
+  cols: number;
+  rows: number;
+  text: string;
+}
 
 @Component({
   selector: 'app-review-main',
@@ -18,6 +22,8 @@ export interface Review {
 })
 export class ReviewMainComponent implements OnInit {
   public reviews: Review[] = [];
+
+  tiles: Tile[] = [{text: '', cols: 12, rows: 7, color: ''},{text: '', cols: 12, rows: 1, color: 'lightgreen'}];
 
   constructor(private reviewService: ReviewService) { }
 

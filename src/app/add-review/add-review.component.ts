@@ -11,6 +11,12 @@ export interface Review {
   description: string;
 }
 
+export interface Tile {
+  color: string;
+  cols: number;
+  rows: number;
+  text: string;
+}
 
 @Component({
   selector: 'app-add-review',
@@ -19,6 +25,8 @@ export interface Review {
 })
 export class AddReviewComponent implements OnInit {
   public review: Review = {} as Review;
+
+  tiles: Tile[] = [{text: '', cols: 12, rows: 9, color: ''},{text: '', cols: 12, rows: 1, color: 'lightgreen'}];
 
   constructor(private reviewService: ReviewService,
               private router: Router, private http: HttpClient) { }

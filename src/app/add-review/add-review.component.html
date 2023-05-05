@@ -1,37 +1,69 @@
 <div class="container">
   <div class="row">
-      <div class="col">
-          <p class="h3 fw-bold text-success">Add New Review</p>
-          <p class="fst-italic">This page allows you to add to the current reviews.</p>
-      </div>
+    <div class="col">
+      <p class="h3 fw-bold">Add New Review</p>
+      <p class="fst-italic">
+        This page allows you to add to the current reviews.
+      </p>
+    </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">
-      <div class="col-sm-4">
-          <form (submit)="addNewReview()">
-              <div class="mb-2">
-                  <input [(ngModel)]="rName" class="form-control" name="name" placeholder="Name" type="text">
-              </div>
-              <div class="mb-2">
-                  <input [(ngModel)]="rRating" class="form-control" name="rating" placeholder="Rating" type="rating">
-              </div>
-              <div class="mb-2">
-                  <input [(ngModel)]="rDescription" class="form-control" name="description" placeholder="Description" type="text">
-              </div>
-              <div class="mb-2">
-                  <!-- <input class="btn btn-success" value="Create" type="submit"> -->
-                  <button
-          class="btn btn-primary"
-          routerLink="/"
-          (click)="addNewReview()"
-        >
-          Create Review
-        </button>
-                  <a class="btn btn-dark ms-2" routerLink="/">Close</a>
-              </div>
-          </form>
-      </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-4">
+      <form (submit)="addNewReview()">
+        <div class="mb-2">
+          <input
+            [(ngModel)]="rName"
+            class="form-control"
+            name="name"
+            placeholder="Name"
+            type="text"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="rRating"
+            class="form-control"
+            name="rating"
+            placeholder="Rating"
+            type="rating"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            [(ngModel)]="rDescription"
+            class="form-control"
+            name="description"
+            placeholder="Description"
+            type="text"
+          />
+        </div>
+        <div class="mb-2">
+          <!-- <input class="btn btn-success" value="Create" type="submit"> -->
+          <button
+            class="btn btn-primary"
+            routerLink="/reviews"
+            (click)="addNewReview()"
+          >
+            Create Review
+          </button>
+          <a class="btn btn-dark ms-2" routerLink="/reviews">Close</a>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
+
+<mat-grid-list cols="12" rowHeight="100px">
+    <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color"
+      [innerHTML]="tile.text"
+      [class.lightgreen-tile]="tile.color.includes('green')"
+      [class.black-tile]="tile.color.includes('black')">
+    </mat-grid-tile>
+  </mat-grid-list>
