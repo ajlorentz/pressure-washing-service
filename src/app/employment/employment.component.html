@@ -66,5 +66,9 @@
 
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+    <!-- Display confirmation notification when form is submitted -->
+    <div *ngIf="submitted" class="alert alert-success mt-3">
+      Application submitted successfully!
+    </div>
   </div>
 </div>
