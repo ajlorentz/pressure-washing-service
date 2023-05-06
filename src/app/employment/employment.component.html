@@ -1,9 +1,9 @@
 <h1></h1>
 <h2 style="font-size:20px; text-align:center;">
-  Thanks for your interest in our company! Please fill out the application
-  below, and we will respond to you as quickly as we can.
+  <br /><br />Thanks for your interest in our company! Please fill out the
+  application below, and we will respond to you as quickly as we can.
 </h2>
-<h3></h3>
+<h3><br /><br /></h3>
 <div class="card">
   <div class="card-header">Employment Application</div>
   <div class="card-body">
@@ -73,16 +73,16 @@
   </div>
 </div>
 <div class="bottom">
-<mat-grid-list cols="12" rowHeight="100px">
-  <mat-grid-tile
-    *ngFor="let tile of tiles"
-    [colspan]="tile.cols"
-    [rowspan]="tile.rows"
-    [style.background]="tile.color"
-    [innerHTML]="tile.text"
-    [class.lightgreen-tile]="tile.color.includes('green')"
-    [class.black-tile]="tile.color.includes('black')"
-  >
-  </mat-grid-tile>
-</mat-grid-list>
+  <mat-grid-list cols="12" rowHeight="100px">
+    <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color"
+      [innerHTML]="tile.text"
+      [class.lightgreen-tile]="tile.color.includes('green')"
+      [class.black-tile]="tile.color.includes('black')"
+    >
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
