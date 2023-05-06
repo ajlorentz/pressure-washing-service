@@ -23,7 +23,7 @@ export interface Tile {
 export class ReviewMainComponent implements OnInit {
   public reviews: Review[] = [];
 
-  tiles: Tile[] = [{text: '', cols: 12, rows: 7, color: ''},{text: '', cols: 12, rows: 1, color: 'lightgreen'}];
+  tiles: Tile[] = [{text: '', cols: 12, rows: 11, color: ''},{text: '', cols: 12, rows: 1, color: 'lightgreen'}];
 
   constructor(private reviewService: ReviewService) { }
 
