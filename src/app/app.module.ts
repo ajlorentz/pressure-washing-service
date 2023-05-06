@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-
+import { EmploymentComponent } from './employment/employment.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -19,10 +19,28 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { SchedulingFinalComponent } from './scheduling-final/scheduling-final.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, GalleryComponent, ReviewMainComponent, AddReviewComponent, SchedulingComponent,
-    ServicesComponent, SchedulingServiceComponent, SchedulingEquipmentComponent, SchedulingPaymentComponent, EquipmentComponent,
-    SchedulingFinalComponent],
-  imports: [BrowserModule, MatGridListModule, AppRoutingModule, HttpClientModule, FormsModule],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    GalleryComponent,
+    ReviewMainComponent,
+    AddReviewComponent,
+    SchedulingComponent,
+    ServicesComponent,
+    SchedulingServiceComponent,
+    SchedulingEquipmentComponent,
+    SchedulingPaymentComponent,
+    EmploymentComponent,
+    EquipmentComponent,
+    SchedulingFinalComponent,
+  ],
+  imports: [
+    BrowserModule,
+    MatGridListModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+  ],
 
   providers: [],
   bootstrap: [AppComponent],
