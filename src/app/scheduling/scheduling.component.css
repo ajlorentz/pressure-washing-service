@@ -6,3 +6,8 @@ body {
   background-color: grey;
   text-align: center;
 }
+
+.lightgreen-tile {
+  border: 3px solid black;
+  padding: 10px;
+}

@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceDataService } from '../service-data.service';
 
+export interface Tile {
+  color: string;
+  cols: number;
+  rows: number;
+  text: string;
+}
+
 @Component({
   selector: 'app-scheduling',
   templateUrl: './scheduling.component.html',
@@ -8,6 +15,8 @@ import { ServiceDataService } from '../service-data.service';
 })
 export class SchedulingComponent implements OnInit {
   constructor(private services: ServiceDataService) {}
+
+  tiles: Tile[] = [{text: '', cols: 12, rows: 1, color: ''},{text: '', cols: 12, rows: 1, color: 'lightgreen'}];
 
   service_list = this.services.getServices();
 
