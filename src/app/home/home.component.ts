@@ -48,12 +48,10 @@ export class HomeComponent implements OnInit {
       <h2>Contact Us</h2>
   
       <p>If you have any questions or feedback, please feel free to reach out to us:</p>
-  
-      <ul>
-        <li><strong>Email:</strong> pwservice@company.com</li>
-        <li><strong>Phone:</strong> (701) 777-7700</li>
-        <li><strong>Address:</strong> 123 Main St, Fargo, ND</li>
-      </ul>
+        <p><strong>Email:</strong> pwservice@company.com</p>
+        <p><strong>Phone:</strong> (701) 777-7700</p>
+        <p><strong>Address:</strong> 123 Main St, Fargo, ND</p>
+
     `, cols: 3, rows: 2, color: 'lightgreen'},
     {text: '', cols: 4, rows: 1, color: ''},
     {text: `<img src="https://media.istockphoto.com/id/1306260764/photo/man-cleaning-red-conrete-pavement-block-using-high-pressure-water-cleaner-paving-cleaning.jpg?s=612x612&w=0&k=20&c=Rfqp12b1yGUiOhHGF86HmqtGlfotrtIebnDgw_LuXAQ=" alt="washing brick">`, cols: 4, rows: 4, color: 'black'},
