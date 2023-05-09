@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
         <p><strong>Phone:</strong> (701) 777-7700</p>
         <p><strong>Address:</strong> 123 Main St, Fargo, ND</p>
 
-    `, cols: 3, rows: 2, color: 'lightgreen'},
+    `, cols: 3, rows: 3, color: 'lightgreen'},
     {text: '', cols: 4, rows: 1, color: ''},
     {text: `<img src="https://media.istockphoto.com/id/1306260764/photo/man-cleaning-red-conrete-pavement-block-using-high-pressure-water-cleaner-paving-cleaning.jpg?s=612x612&w=0&k=20&c=Rfqp12b1yGUiOhHGF86HmqtGlfotrtIebnDgw_LuXAQ=" alt="washing brick">`, cols: 4, rows: 4, color: 'black'},
     {text: '', cols: 12, rows: 1, color: ''},
